@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="lulu - Professional website">
+    <meta name="generator" content="Website Generator">
+    <meta name="theme-color" content="hsl(63, 74%, 40%)">
+    <title>lulu</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body{font-family:'Inter', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Inter', sans-serif}
+        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
+        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .7s ease-out,transform .7s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}[data-animate="stagger"]>*{opacity:0;transform:translateY(15px);transition:opacity .5s,transform .5s;transition-delay:calc(var(--child-index,0)*.1s)}[data-animate="stagger"].visible>*{opacity:1;transform:translateY(0)}
+        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
+        ::-webkit-scrollbar{width:8px;height:8px}
+        ::-webkit-scrollbar-track{background:#f1f1f1}
+        ::-webkit-scrollbar-thumb{background:hsl(63, 74%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(63, 74%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(63, 74%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        @media print{[data-animate]{opacity:1;transform:none}}
+    </style>
+    
+    <script>
+        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(63, 74%, 95%)","100":"hsl(63, 74%, 90%)","200":"hsl(63, 74%, 80%)","300":"hsl(63, 74%, 70%)","400":"hsl(63, 74%, 60%)","500":"hsl(63, 74%, 50%)","600":"hsl(63, 74%, 40%)","700":"hsl(63, 74%, 30%)","800":"hsl(63, 74%, 20%)","900":"hsl(63, 74%, 10%)"}},fontFamily:{sans:[''Inter'','system-ui','sans-serif'],heading:[''Inter'','sans-serif']}}}}
+    </script>
+</head>
+<body class="antialiased text-gray-800">
+    <main>
+        
+<!-- NAV SECTION -->
+
+
+<!-- HEADER SECTION -->
+<header class="relative overflow-hidden bg-teal-100">
+    <div class="absolute inset-0">
+        <img src="/images/gd5806a804eee4455feb1f61b037efb01db7d0247b5ca43a3a36d5a0d631bcd967ba0b193b27660aef2607bd602ce6788_640.jpg" alt="Accounting Background" class="object-cover object-center w-full h-full" />
+        <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-coral-500 opacity-70"></div>
+    </div>
+
+    <nav class="relative px-6 py-4">
+        <div class="container flex items-center justify-between mx-auto">
+            <a href="#" class="text-2xl font-bold text-white">
+                Lulu Accounting
+            </a>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="#" class="text-white hover:text-teal-200">Services</a>
+                <a href="#" class="text-white hover:text-teal-200">About Us</a>
+                <a href="#" class="text-white hover:text-teal-200">Pricing</a>
+                <a href="#" class="text-white hover:text-teal-200">Contact</a>
+                <a href="#" class="inline-block px-4 py-2 text-teal-600 bg-white rounded-lg hover:bg-teal-50 shadow">Get Started</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none focus:text-teal-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu, hidden by default -->
+        <div class="hidden lg:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-500 hover:text-white">Services</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-500 hover:text-white">About Us</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-500 hover:text-white">Pricing</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-500 hover:text-white">Contact</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-teal-600 bg-white rounded-md hover:bg-teal-500 hover:text-white shadow">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative container flex flex-col items-center px-6 py-20 mx-auto text-center">
+        <h1 class="text-5xl font-bold leading-tight text-white md:text-6xl" data-animate="fade-in-up">
+            Your Trusted Partner for Accounting Excellence
+        </h1>
+        <p class="mt-6 text-lg text-teal-100" data-animate="fade-in-up" data-animate-delay="200">
+            We provide comprehensive accounting solutions tailored to your business needs.
+        </p>
+        <div class="flex items-center justify-center mt-8 space-x-4" data-animate="fade-in-up" data-animate-delay="400">
+            <a href="#" class="inline-block px-6 py-3 text-lg font-semibold text-white bg-coral-500 rounded-lg hover:bg-coral-600 shadow">
+                Get a Free Consultation
+            </a>
+            <a href="#" class="inline-block px-6 py-3 text-lg font-semibold text-white bg-teal-600 bg-opacity-50 rounded-lg hover:bg-teal-700 hover:bg-opacity-70">
+                Learn More
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="w-full py-16 bg-white" data-animate="fade-in">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+      <div class="order-2 md:order-1">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-teal-700 mb-6">About Lulu Accounting: Your Trusted Partner</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          At Lulu Accounting, we understand that managing your finances can be complex and time-consuming.  That's why we're dedicated to providing comprehensive accounting solutions tailored to your specific needs. Whether you're a small business owner, a growing startup, or an individual seeking expert tax advice, our team of experienced professionals is here to help you achieve your financial goals.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Founded in 2018, Lulu Accounting has built a reputation for accuracy, integrity, and personalized service.  We go beyond simply crunching numbers; we strive to understand your business inside and out, offering proactive advice and strategic insights to help you make informed decisions.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Our commitment to excellence extends to our use of cutting-edge technology. We leverage cloud-based accounting software and secure data management practices to ensure your financial information is always accurate, accessible, and protected.
+        </p>
+        <a href="#services" class="inline-block bg-teal-500 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+          Explore Our Services
+        </a>
+      </div>
+
+      <div class="order-1 md:order-2">
+        <img src="/images/g1ddb9f3b77c2962a75e8f3b486ff16607dc7a5b007f1791af2ed142b748c1941345559823ba7a7c025ab03c51393c0e6037646078d858ebcc49fc6868acabe2f_640-1.jpg" alt="Team working on finances" class="rounded-xl shadow-lg w-full" data-animate="slide-in-right">
+      </div>
+
+    </div>
+
+    <div class="mt-12 border-t border-gray-200 pt-8">
+      <h3 class="text-2xl font-semibold text-teal-700 mb-4">Our Core Values</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">Integrity</h4>
+          <p class="text-gray-600">We uphold the highest ethical standards in everything we do.  Trust and transparency are the foundation of our relationships with our clients.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">Accuracy</h4>
+          <p class="text-gray-600">We are meticulous and detail-oriented, ensuring the accuracy of your financial records and tax filings.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">Client Focus</h4>
+          <p class="text-gray-600">We are committed to providing personalized service and building long-term relationships with our clients. Your success is our priority.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-16 bg-teal-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12" data-animate="fade-in">
+            <h2 class="text-3xl font-extrabold text-teal-800 mb-4">Our Accounting Services</h2>
+            <p class="text-lg text-gray-600">We offer a comprehensive range of accounting services to help your business thrive.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Service 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-teal-700 mb-2">Tax Preparation & Planning</h3>
+                    <p class="text-gray-600 mb-4">Minimize your tax liabilities and maximize your savings with our expert tax preparation and planning services. We stay up-to-date with the latest tax laws and regulations to ensure compliance and identify opportunities for tax optimization.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Individual Tax Returns</li>
+                        <li>Business Tax Returns</li>
+                        <li>Tax Planning Strategies</li>
+                        <li>Audit Support</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 bg-coral-500 hover:bg-coral-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="fade-in">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-teal-700 mb-2">Bookkeeping & Accounting</h3>
+                    <p class="text-gray-600 mb-4">Keep your finances organized and accurate with our comprehensive bookkeeping and accounting services. We handle all aspects of your financial record-keeping, from transaction recording to financial statement preparation.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Monthly Bookkeeping</li>
+                        <li>Financial Statement Preparation</li>
+                        <li>Accounts Payable/Receivable</li>
+                        <li>Bank Reconciliation</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 bg-coral-500 hover:bg-coral-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-teal-700 mb-2">Payroll Services</h3>
+                    <p class="text-gray-600 mb-4">Simplify your payroll process with our reliable and efficient payroll services. We handle all aspects of payroll processing, from calculating wages and taxes to generating paychecks and filing payroll taxes.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Payroll Processing</li>
+                        <li>Payroll Tax Filing</li>
+                        <li>Employee Payment Options</li>
+                        <li>Year-End Reporting</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 bg-coral-500 hover:bg-coral-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-teal-700 mb-2">Business Consulting</h3>
+                    <p class="text-gray-600 mb-4">Get expert advice and guidance to help your business grow and succeed. We provide a wide range of business consulting services, including financial planning, budgeting, and strategic planning.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Financial Planning</li>
+                        <li>Budgeting & Forecasting</li>
+                        <li>Strategic Planning</li>
+                        <li>Business Valuation</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 bg-coral-500 hover:bg-coral-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="fade-in">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-teal-700 mb-2">Audit & Assurance</h3>
+                    <p class="text-gray-600 mb-4">Ensure the accuracy and reliability of your financial statements with our audit and assurance services. We provide independent audits and reviews to help you meet regulatory requirements and improve your financial reporting.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Financial Statement Audits</li>
+                        <li>Internal Control Reviews</li>
+                        <li>Compliance Audits</li>
+                        <li>Agreed-Upon Procedures</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 bg-coral-500 hover:bg-coral-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-teal-700 mb-2">QuickBooks Consulting</h3>
+                    <p class="text-gray-600 mb-4">Optimize your use of QuickBooks with our expert consulting services. We provide setup, training, and support to help you get the most out of your accounting software.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>QuickBooks Setup</li>
+                        <li>QuickBooks Training</li>
+                        <li>QuickBooks Support</li>
+                        <li>QuickBooks Troubleshooting</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 bg-coral-500 hover:bg-coral-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="py-16 bg-teal-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-semibold text-teal-800 mb-4" data-animate="fade-in">
+        Empowering Your Financial Success
+      </h2>
+      <p class="text-gray-600 leading-relaxed" data-animate="fade-in" data-animate-delay="200">
+        We offer a comprehensive suite of accounting services designed to streamline your finances,
+        reduce your tax burden, and help you achieve your business goals.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Feature 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-left">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-coral-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 4.75 7.5 4.75a12.742 12.742 0 00-2.269 1.005l-3.772 2.262a11.407 11.407 0 019 9.554a11.386 11.386 0 019-9.554l-3.772-2.262a12.742 12.742 0 00-2.269-1.005c-1.746 0-3.332.727-4.5 1.526m0 14.747c1.168.799 2.754 1.526 4.5 1.526a12.742 12.742 0 002.269-.992l3.772-2.262a11.407 11.407 0 01-9-9.554a11.386 11.386 0 01-9 9.554l3.772 2.262a12.742 12.742 0 002.269.992c1.746 0 3.332-.727 4.5-1.526">
+              </path>
+            </svg>
+            <h3 class="text-xl font-semibold text-teal-700">Bookkeeping Services</h3>
+          </div>
+          <p class="text-gray-500">
+            Accurate and timely bookkeeping is the foundation of sound financial management. We handle all aspects of
+            your bookkeeping, from transaction recording to bank reconciliation, ensuring your records are always
+            up-to-date and accurate.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-up">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-coral-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 17v-3m3 1v3m3-5v3m2-2h-2m-3-1h-1m-3-1h-2m-6 2v1a3 3 0 003 3h15a3 3 0 003-3V2a3 3 0 00-3-3H6a3 3 0 00-3 3v5m18 3H5m-2 2v1a3 3 0 003 3h15a3 3 0 003-3V2a3 3 0 00-3-3H6a3 3 0 00-3 3v5m18 3H5">
+              </path>
+            </svg>
+            <h3 class="text-xl font-semibold text-teal-700">Tax Planning & Preparation</h3>
+          </div>
+          <p class="text-gray-500">
+            Minimize your tax liability and maximize your savings with our proactive tax planning services. We stay
+            up-to-date on the latest tax laws and regulations to ensure you're taking advantage of all available
+            deductions and credits. We also provide expert tax preparation services for individuals and businesses.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-right">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-coral-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6M2 9l6-6 4 4 6-6m-3 10v-3m0 3h-3m3 0a3 3 0 11-6 0 3 3 0 016 0z">
+              </path>
+            </svg>
+            <h3 class="text-xl font-semibold text-teal-700">Financial Analysis & Reporting</h3>
+          </div>
+          <p class="text-gray-500">
+            Gain valuable insights into your business performance with our comprehensive financial analysis and
+            reporting services. We provide customized reports that track key performance indicators (KPIs) and help you
+            make informed decisions to improve profitability and efficiency.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-left">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-coral-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4">
+              </path>
+            </svg>
+            <h3 class="text-xl font-semibold text-teal-700">Business Consulting</h3>
+          </div>
+          <p class="text-gray-500">
+            We offer strategic business consulting services to help you overcome challenges and achieve your long-term
+            goals. Our experienced consultants provide guidance on a wide range of topics, including financial
+            planning, budgeting, and operational efficiency.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-down">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-coral-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 13l4 4L19 7"></path>
+            </svg>
+            <h3 class="text-xl font-semibold text-teal-700">Payroll Services</h3>
+          </div>
+          <p class="text-gray-500">
+            Simplify your payroll process with our comprehensive payroll services. We handle all aspects of payroll
+            administration, including calculating wages, withholding taxes, and filing payroll tax returns, ensuring
+            your employees are paid accurately and on time.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-right">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-coral-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="text-xl font-semibold text-teal-700">Audit Support</h3>
+          </div>
+          <p class="text-gray-500">
+            Navigating an audit can be stressful. We provide comprehensive audit support services to help you prepare
+            for and successfully complete audits. We work closely with you to gather the necessary documentation and
+            ensure compliance with all applicable regulations.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-extrabold text-center text-teal-700 mb-8" data-animate="fade-in">
+      What Our Clients Say
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-left">
+        <div>
+          <div class="text-gray-600 italic mb-4">
+            "Lulu Accounting has been instrumental in helping us streamline our financial processes. Their expertise and dedication have allowed us to focus on growing our business without worrying about the complexities of accounting."
+          </div>
+          <div class="flex items-center">
+            <img src="/images/g4eb00d1b1cbaf1a118d72eebb32ee5c43e18440dd5f236d3e75a7b82ea9f3e3cfe38101761165e5690865fc0097304aacdeb58d937aac12f8d6b6555b9069b76_640.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <p class="font-semibold text-teal-600">Sarah Johnson</p>
+              <p class="text-sm text-gray-500">CEO, Tech Solutions Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-coral-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-2.22-2.22H16.5a.75.75 0 000-1.5H6.78l2.22-2.22a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-up">
+        <div>
+          <div class="text-gray-600 italic mb-4">
+            "We've been working with Lulu Accounting for over five years, and their service has been consistently exceptional. They are proactive, responsive, and always go the extra mile to ensure our financial needs are met. Highly recommended!"
+          </div>
+          <div class="flex items-center">
+            <img src="/images/gd5806a804eee4455feb1f61b037efb01db7d0247b5ca43a3a36d5a0d631bcd967ba0b193b27660aef2607bd602ce6788_640.jpg" alt="David Lee" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <p class="font-semibold text-teal-600">David Lee</p>
+              <p class="text-sm text-gray-500">Founder, Creative Agency</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-coral-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-2.22-2.22H16.5a.75.75 0 000-1.5H6.78l2.22-2.22a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-right">
+        <div>
+          <div class="text-gray-600 italic mb-4">
+            "Lulu Accounting helped us navigate a complex tax situation with ease. Their expertise and attention to detail saved us a significant amount of money. We are extremely grateful for their services."
+          </div>
+          <div class="flex items-center">
+            <img src="/images/g0ae604986066b0d61eff8d1c3adb1f578e6b1cc626b8deacc89fe49116ff8e06a0763a194bcf9bad72e7509fb374dcff4ff1c16e2a2fe672af951b2122956327_640.jpg" alt="Michael Brown" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <p class="font-semibold text-teal-600">Michael Brown</p>
+              <p class="text-sm text-gray-500">Owner, Retail Store</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-coral-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-2.22-2.22H16.5a.75.75 0 000-1.5H6.78l2.22-2.22a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="relative py-20 bg-teal-50">
+    <div class="container mx-auto px-4">
+        <div class="lg:flex lg:flex-wrap lg:-mx-4">
+
+            <div class="lg:w-1/2 lg:px-4 mb-12 lg:mb-0" data-animate="fade-in-left">
+                <h2 class="text-3xl font-extrabold text-teal-800 mb-6">Get in Touch</h2>
+                <p class="text-gray-600 mb-8">
+                    We're here to answer your questions and help you find the best accounting solutions for your business. Contact us today to schedule a consultation.
+                </p>
+
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-teal-500 mr-4">
+                        <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.5a3 3 0 013 3h-6zm14.553 0a3 3 0 013 3h1.5a3 3 0 013-3h-6zm-15.006 0a3 3 0 01-3 3v1.5a3 3 0 013 3h.047zm19.512 0a3 3 0 013-3v1.5a3 3 0 01-3 3h-.047zM3.954 9a3 3 0 01-3-3h-1.5a3 3 0 013 3v1.5zm18.092 0a3 3 0 013-3h-1.5a3 3 0 01-3 3v1.5zM1.5 15a3 3 0 013 3h1.5a3 3 0 013-3h-6zm14.553 0a3 3 0 013 3h1.5a3 3 0 013-3h-6zm-15.006 0a3 3 0 01-3-3v1.5a3 3 0 013-3h.047zm19.512 0a3 3 0 013 3v1.5a3 3 0 01-3-3h-.047zM3.954 15a3 3 0 01-3 3h-1.5a3 3 0 013-3v-1.5zm18.092 0a3 3 0 013 3h-1.5a3 3 0 01-3-3v-1.5z" clip-rule="evenodd" />
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V12.75a.75.75 0 01.75-.75zM16.5 12a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V12.75a.75.75 0 01.75-.75z" />
+                        <path fill-rule="evenodd" d="M12 2.625a9.375 9.375 0 100 18.75A9.375 9.375 0 0012 2.625zM12 4.5a7.5 7.5 0 100 15A7.5 7.5 0 0012 4.5z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">123 Main Street, Anytown, USA</span>
+                </div>
+
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-teal-500 mr-4">
+                        <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                        <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                    </svg>
+                    <a href="mailto:info@luluaccounting.com" class="text-gray-700 hover:text-teal-700">info@luluaccounting.com</a>
+                </div>
+
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-teal-500 mr-4">
+                        <path d="M1.5 4.5a3 3 0 013-3h1.5a3 3 0 013 3h-6zm14.553 0a3 3 0 013 3h1.5a3 3 0 013-3h-6zm-15.006 0a3 3 0 01-3 3v1.5a3 3 0 013 3h.047zm19.512 0a3 3 0 013-3v1.5a3 3 0 01-3 3h-.047zM3.954 9a3 3 0 01-3-3h-1.5a3 3 0 013 3v1.5zm18.092 0a3 3 0 013-3h-1.5a3 3 0 01-3 3v1.5zM1.5 15a3 3 0 013 3h1.5a3 3 0 013-3h-6zm14.553 0a3 3 0 013 3h1.5a3 3 0 013-3h-6zm-15.006 0a3 3 0 01-3-3v1.5a3 3 0 013-3h.047zm19.512 0a3 3 0 013 3v1.5a3 3 0 01-3-3h-.047zM3.954 15a3 3 0 01-3 3h-1.5a3 3 0 013-3v-1.5zm18.092 0a3 3 0 013 3h-1.5a3 3 0 01-3-3v-1.5z" clip-rule="evenodd" />
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V12.75a.75.75 0 01.75-.75zM16.5 12a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V12.75a.75.75 0 01.75-.75z" />
+                        <path fill-rule="evenodd" d="M12 2.625a9.375 9.375 0 100 18.75A9.375 9.375 0 0012 2.625zM12 4.5a7.5 7.5 0 100 15A7.5 7.5 0 0012 4.5z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="tel:+15551234567" class="text-gray-700 hover:text-teal-700">+1 (555) 123-4567</a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 lg:px-4" data-animate="fade-in-right">
+                <div class="bg-white shadow-md rounded-lg p-8">
+                    <h3 class="text-xl font-semibold text-teal-700 mb-4">Send us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="bg-teal-900 text-white py-12 mt-24">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">About Lulu Accounting</h3>
+                <p class="text-gray-300">Lulu Accounting provides expert financial solutions tailored to your business needs. We offer comprehensive services, from bookkeeping to tax planning, helping you achieve your financial goals.</p>
+                <div class="flex mt-4 space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter-square fa-2x"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Services</h3>
+                <ul class="list-none pl-0">
+                    <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Bookkeeping</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Tax Preparation</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Financial Planning</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Payroll Services</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Business Consulting</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="list-none pl-0">
+                    <li class="mb-2"><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
+                    <li class="mb-2"><a href="/about" class="text-gray-300 hover:text-white">About Us</a></li>
+                    <li class="mb-2"><a href="/services" class="text-gray-300 hover:text-white">Our Services</a></li>
+                    <li class="mb-2"><a href="/contact" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    <li class="mb-2"><a href="/blog" class="text-gray-300 hover:text-white">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-300 mb-2">123 Accounting Street, Suite 200</p>
+                <p class="text-gray-300 mb-2">Cityville, State 12345</p>
+                <p class="text-gray-300 mb-2">Phone: (555) 123-4567</p>
+                <p class="text-gray-300 mb-2">Email: info@luluaccounting.com</p>
+            </div>
+
+        </div>
+
+        <div class="mt-12 text-center text-gray-400">
+            <p>&copy; 2024 Lulu Accounting. All rights reserved.</p>
+            <p>Designed & Developed by [Your Name/Company]</p>
+        </div>
+    </div>
+</footer>
+
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            // Animation system
+            const observer=new IntersectionObserver(entries=>{
+                entries.forEach((entry,i)=>{
+                    if(entry.isIntersecting){
+                        setTimeout(()=>{
+                            entry.target.classList.add('visible');
+                            // Handle staggered children if using that animation style
+                            if(entry.target.getAttribute('data-animate')==='stagger'){
+                                Array.from(entry.target.children).forEach((child,childIndex)=>{
+                                    child.style.setProperty('--child-index',childIndex);
+                                });
+                            }
+                        },i*100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
+            
+            document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+            
+            // Fixed navigation
+            const nav=document.querySelector('nav');
+            if(nav){
+                const handleScroll=()=>{
+                    nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
+                };
+                window.addEventListener('scroll',handleScroll,{passive:true});
+                handleScroll();
+            }
+            
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+                    const targetId=this.getAttribute('href');
+                    if(targetId==='#')return;
+                    const target=document.querySelector(targetId);
+                    if(target){
+                        const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
+                        window.scrollTo({top:targetPosition,behavior:'smooth'});
+                    }
+                });
+            });
+            
+            // Scroll progress indicator
+            const height=Math.max(
+                document.body.scrollHeight,
+                document.body.offsetHeight,
+                document.documentElement.clientHeight,
+                document.documentElement.scrollHeight,
+                document.documentElement.offsetHeight
+            )-window.innerHeight;
+            
+            window.addEventListener('scroll',()=>{
+                document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
+            },{passive:true});
+            
+            // Mobile menu
+            const menuToggle=document.getElementById('mobile-menu-toggle');
+            const mobileMenu=document.getElementById('mobile-menu');
+            if(menuToggle&&mobileMenu){
+                menuToggle.addEventListener('click',()=>{
+                    mobileMenu.classList.toggle('hidden');
+                    document.body.classList.toggle('overflow-hidden');
+                });
+                document.addEventListener('click',e=>{
+                    if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
+                        menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
+                        mobileMenu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }
+                });
+            }
+            
+            // Accordions
+            document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
+                btn.addEventListener('click',()=>{
+                    const target=document.querySelector(btn.getAttribute('data-accordion-target'));
+                    if(target){
+                        const isExpanded=btn.getAttribute('aria-expanded')==='true';
+                        target.classList.toggle('hidden');
+                        btn.setAttribute('aria-expanded',isExpanded?'false':'true');
+                        const icon=btn.querySelector('.accordion-icon');
+                        if(icon)icon.classList.toggle('rotate-180');
+                    }
+                });
+            });
+            
+            // Form validation (optional enhancement)
+            document.querySelectorAll('form').forEach(form=>{
+                form.addEventListener('submit',function(e){
+                    let valid=true;
+                    const requiredFields=form.querySelectorAll('[required]');
+                    
+                    requiredFields.forEach(field=>{
+                        if(!field.value.trim()){
+                            valid=false;
+                            field.classList.add('border-red-500');
+                            
+                            // Add error message if not already present
+                            let errorMsg=field.parentNode.querySelector('.error-message');
+                            if(!errorMsg){
+                                errorMsg=document.createElement('p');
+                                errorMsg.className='text-red-500 text-sm mt-1 error-message';
+                                errorMsg.textContent='This field is required';
+                                field.parentNode.appendChild(errorMsg);
+                            }
+                        }else{
+                            field.classList.remove('border-red-500');
+                            const errorMsg=field.parentNode.querySelector('.error-message');
+                            if(errorMsg)errorMsg.remove();
+                        }
+                    });
+                    
+                    if(!valid){
+                        e.preventDefault();
+                    }
+                });
+            });
+            
+            // Tabs functionality if present
+            document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
+                const tabs=tabGroup.querySelectorAll('[data-tab]');
+                const tabContents=document.querySelectorAll('[data-tab-content]');
+                
+                tabs.forEach(tab=>{
+                    tab.addEventListener('click',()=>{
+                        const target=tab.getAttribute('data-tab');
+                        
+                        // Update active tab state
+                        tabs.forEach(t=>t.classList.remove('active-tab','text-primary-600','border-primary-600'));
+                        tab.classList.add('active-tab','text-primary-600','border-primary-600');
+                        
+                        // Show correct content
+                        tabContents.forEach(content=>{
+                            if(content.getAttribute('data-tab-content')===target){
+                                content.classList.remove('hidden');
+                            }else{
+                                content.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
+            });
+            
+            // Carousels
+            document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+                const slides=carousel.querySelectorAll('[data-slide]');
+                const prevBtn=carousel.querySelector('[data-carousel-prev]');
+                const nextBtn=carousel.querySelector('[data-carousel-next]');
+                
+                if(slides.length>0&&prevBtn&&nextBtn){
+                    let current=0,interval=null;
+                    
+                    slides[0].classList.remove('hidden');
+                    
+                    const updateIndicators=()=>{
+                        carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                            ind.classList[i===current?'add':'remove']('bg-primary-600');
+                            ind.classList[i!==current?'add':'remove']('bg-gray-300');
+                        });
+                    };
+                    
+                    const showSlide=idx=>{
+                        slides.forEach(s=>s.classList.add('hidden'));
+                        slides[idx].classList.remove('hidden');
+                        updateIndicators();
+                    };
+                    
+                    nextBtn.addEventListener('click',()=>{
+                        current=(current+1)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    prevBtn.addEventListener('click',()=>{
+                        current=(current-1+slides.length)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    updateIndicators();
+                    
+                    const startAuto=()=>{
+                        if(carousel.hasAttribute('data-auto')&&!interval){
+                            interval=setInterval(()=>{
+                                current=(current+1)%slides.length;
+                                showSlide(current);
+                            },5000);
+                        }
+                    };
+                    
+                    carousel.addEventListener('mouseenter',()=>{
+                        if(interval){clearInterval(interval);interval=null;}
+                    });
+                    
+                    carousel.addEventListener('mouseleave',startAuto);
+                    
+                    carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                        ind.addEventListener('click',()=>{
+                            current=i;
+                            showSlide(current);
+                        });
+                    });
+                    
+                    startAuto();
+                }
+            });
+            
+            // Initialize counters for stats sections if they exist
+            document.querySelectorAll('[data-counter]').forEach(counter=>{
+                const target=parseInt(counter.getAttribute('data-counter')||'0',10);
+                const duration=1500; // Animation duration in ms
+                const step=Math.ceil(target/50); // How much to increment per step
+                let current=0;
+                
+                const updateCounter=()=>{
+                    current+=step;
+                    if(current>target)current=target;
+                    
+                    counter.textContent=current.toString().replace(/B(?=(d{3})+(?!d))/g,',');
+                    
+                    if(current<target){
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+                
+                // Start counting when element is in view
+                const observer=new IntersectionObserver(entries=>{
+                    entries.forEach(entry=>{
+                        if(entry.isIntersecting){
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },{threshold:0.5});
+                
+                observer.observe(counter);
+            });
+        });
+    </script>
+</body>
+</html>

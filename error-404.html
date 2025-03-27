@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Page Not Found - lulu">
+      <title>Page Not Found - lulu</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+        
+        body{font-family:'Source Sans Pro', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Playfair Display', serif}
+        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
+        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
+        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
+        ::-webkit-scrollbar{width:8px;height:8px}
+        ::-webkit-scrollbar-track{background:#f1f1f1}
+        ::-webkit-scrollbar-thumb{background:hsl(217, 75%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(217, 75%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(217, 75%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        @media print{[data-animate]{opacity:1;transform:none}}
+    
+      </style>
+    </head>
+    <body>
+      <nav class="relative px-6 py-4">
+        <div class="container flex items-center justify-between mx-auto">
+            <a href="#" class="text-2xl font-bold text-white">
+                Lulu Accounting
+            </a>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="#" class="text-white hover:text-teal-200">Services</a>
+                <a href="#" class="text-white hover:text-teal-200">About Us</a>
+                <a href="#" class="text-white hover:text-teal-200">Pricing</a>
+                <a href="#" class="text-white hover:text-teal-200">Contact</a>
+                <a href="#" class="inline-block px-4 py-2 text-teal-600 bg-white rounded-lg hover:bg-teal-50 shadow">Get Started</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none focus:text-teal-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu, hidden by default -->
+        <div class="hidden lg:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-500 hover:text-white">Services</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-500 hover:text-white">About Us</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-500 hover:text-white">Pricing</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-500 hover:text-white">Contact</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-teal-600 bg-white rounded-md hover:bg-teal-500 hover:text-white shadow">Get Started</a>
+            </div>
+        </div>
+    </nav>
+      <header class="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+          <h1 class="text-3xl font-bold">Page Not Found - lulu</h1>
+        </div>
+      </header>
+      <main class="container mx-auto px-4 py-8">
+        
+    <div class="py-12 text-center">
+      <h1 class="text-6xl font-bold mb-4">404</h1>
+      <h2 class="text-2xl mb-6">Page Not Found</h2>
+      <p class="mb-8">We're sorry, but the page you requested could not be found.</p>
+      <div class="mb-8">
+        <img src="/api/placeholder/400/300" alt="Page not found illustration" class="mx-auto rounded">
+      </div>
+      <a href="index.html" class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
+        Return to Homepage
+      </a>
+    </div>
+      </main>
+      
+    </body>
+    </html>
